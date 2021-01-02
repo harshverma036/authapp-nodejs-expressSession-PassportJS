@@ -1,0 +1,23 @@
+<div class="row justify-content-center mt-4">
+    <div class="col-lg-4 col-md-8 col-11">
+        <div class="card">
+            <div class="card-body d-flex flex-column justify-content-center">
+                <img src="/undraw_authentication_fsn5.svg" alt="login-img" class="login-img">
+                <%- include('./partials/messages'); -%>
+                <form action="/users/login" method="POST">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email.." class="form-control">
+                    </div>
+                    <div class="mt-2">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password.."
+                            class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-danger mt-2 form-control">Login</button>
+                </form>
+                <span class="mt-2">New User? <a href="/users/register" class="text-danger">Register</a></span>
+            </div>
+        </div>
+    </div>
+</div>
