@@ -25,7 +25,7 @@ Project is created with:
 To run this project, install it locally using npm:
 
 ```
-$ cd authApp-nodejs-expressSessions
+$ cd authapp-nodejs-expressSession-PassportJS
 $ npm install
 $ mongod
 $ npm run dev
